@@ -93,7 +93,7 @@ function App() {
   useEffect(() => {
     const controller = new AbortController();
 
-    fetch("http://localhost:5000/products", { signal: controller.signal })
+    fetch("https://hardware-store-backend-3qar.onrender.com/products", { signal: controller.signal })
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
