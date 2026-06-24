@@ -30,7 +30,7 @@ function Dashboard() {
   };
 
   const fetchProducts = () =>
-    fetch("http://localhost:5000/products")
+    fetch("https://hardware-store-backend-3qar.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(Array.isArray(data) ? data : []))
       .catch((err) => console.error(err));
