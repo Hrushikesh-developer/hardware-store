@@ -330,9 +330,7 @@ function Navbar({ wishCount, cartCount, products }) {
         </div>
         <NavLink to="/bulk-quote">Bulk Quote</NavLink>
         <NavLink to="/calculator">Calculator</NavLink>
-        <NavLink to="/cart" className="wish-link">
-          <ShoppingCart size={18} /> <b>{cartCount}</b>
-        </NavLink>
+        
       </nav>
 
       <a className="call-now" href={callLink}>
